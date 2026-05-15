@@ -15,7 +15,7 @@ CREATE TABLE orders (
     order_id INT PRIMARY KEY,
     customer_id INT,
     product_name TEXT,
-    status VARCHAR(50), -- 例如: 'pending', 'shipped', 'delivered', 'refund_requested'
+    status VARCHAR(50), -- such as 'pending', 'shipped', 'delivered', 'refund_requested'
     order_date TIMESTAMP,
     delivery_date TIMESTAMP,
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
@@ -37,7 +37,7 @@ CREATE TABLE complaints (
 CREATE TABLE customer_memory (
     id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
-    memory_key TEXT,   -- 注意: 'key' 是 SQL 保留字，建議改名 memory_key
+    memory_key TEXT,   
     memory_value TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
