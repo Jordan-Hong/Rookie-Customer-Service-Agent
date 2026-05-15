@@ -24,5 +24,6 @@ def init_mock_data():
     finally:
         db.close()
 
+# 你可以使用這個檔案創建完整假資料進DB，也可以直接透過客服系統創建新會員、新訂單，但是無法指定order_id與customer_id。
 if __name__ == "__main__":
     init_mock_data()
