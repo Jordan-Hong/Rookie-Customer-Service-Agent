@@ -2,7 +2,7 @@
 
 請先安裝適用於您的電腦的MySQL版本，並在VS Code中擴充 MySQL(我擴充的是Database Client版本)。
 在主資料庫的Query貼上: DB_CREATE.text 的內容 (ai_agent_db是我創建的資料庫名稱，請您遵照您的資料庫名稱)
-創建好可連線的資料庫後，請到db_manager.py裡面，調整成適合您的連線command。(DB_URL = "mysql+pymysql://"User Name":"DB Password"@localhost:"Port"/ai_agent_db")
+創建好可連線的資料庫後，請到db_pool.py裡面，調整成適合您的連線command。(DB_URL = "mysql+pymysql://"User Name":"DB Password"@localhost:"Port"/ai_agent_db")
 
 運行後，Terminal應該要顯示: Successfully connected to database!
 
